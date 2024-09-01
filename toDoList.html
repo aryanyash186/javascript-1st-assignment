@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/toDoLIst.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>js dom to do list</title>
+  </head>
+  <body class="bg-[#212121]">
+    <div class="w-8/12 bg-[#fff] p-10 rounded-2xl my-32 mx-auto text-center">
+      <h1 class="mb-8 text-[#333] md:text-3xl tracking-widest font-semibold">
+        EVERY DAY TO DO LIST
+      </h1>
+      <div class="flex justify-between align-center mb-12 gap-4">
+        <input
+          type="text"
+          id="taskInput"
+          class="grow md:p-3 border-2 rounded hover:scale-[102%] transition hover:border-blue-400 focus:outline-none focus:border-red-600 md:text-lg"
+          placeholder="ADD YOUR TASK"
+        />
+        <button
+          onclick="addTask()"
+          class="border-2 rounded hover:border-blue-400 focus:border-red-600 md:h-14 h-7 w-7 md:w-14 hover:scale-105 transition"
+        >
+          <i class="fa fa-plus hover:text-[#15ff00] md:text-4xl"></i>
+        </button>
+      </div>
+      <ul id="taskList" class="p-0 list-none"></ul>
+    </div>
+    <script src="js/toDoList.js"></script>
+  </body>
+</html>
